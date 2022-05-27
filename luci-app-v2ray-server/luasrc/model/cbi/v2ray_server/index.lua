@@ -9,7 +9,7 @@ t.addremove = false
 
 e = t:option(Flag, "enable", translate("Enable"))
 e.rmempty = false
-t:append(Template("v2ray_server/v2ray"))
+--t:append(Template("v2ray_server/v2ray"))
 
 t = m:section(TypedSection, "user", translate("Users Manager"))
 t.anonymous = true
