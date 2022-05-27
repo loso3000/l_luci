@@ -1,5 +1,6 @@
 #!/bin/sh
 chmod +x /etc/init.d/v2ray_server
+chmod +x /usr/lib/lua/luci/model/cbi/v2ray_server/api/app.lua
 uci -q batch <<-EOF >/dev/null
 	delete firewall.v2ray_server
 	set firewall.v2ray_server=include
