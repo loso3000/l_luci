@@ -1,5 +1,5 @@
 #!/bin/sh
-
+chmod +x /etc/init.d/v2ray_server
 uci -q batch <<-EOF >/dev/null
 	delete firewall.v2ray_server
 	set firewall.v2ray_server=include
